@@ -19,6 +19,12 @@
   background: linear-gradient(135deg, var(--base-blue) 0%, var(--accent-cyan) 100%);
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+  transition: all var(--transition-normal);
+}
+
+.logo-container:hover .logo-icon {
+  transform: rotate(15deg) scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.8);
 }
 
 .logo-text {
