@@ -1,5 +1,16 @@
 import React from 'react';
+import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import './Dashboard.css';
+
+const mockData = [
+  { name: 'Mon', activity: 4000 },
+  { name: 'Tue', activity: 3000 },
+  { name: 'Wed', activity: 2000 },
+  { name: 'Thu', activity: 2780 },
+  { name: 'Fri', activity: 1890 },
+  { name: 'Sat', activity: 2390 },
+  { name: 'Sun', activity: 3490 },
+];
 
 const StatCard = ({ title, value, change, isPositive }) => (
   <div className="stat-card glass-panel">
@@ -31,15 +42,22 @@ const Dashboard = () => {
             <button>1M</button>
           </div>
         </div>
-        <div className="chart-body">
-          {/* Mock visual for the chart */}
-          <div className="mock-bar" style={{height: '40%'}}></div>
-          <div className="mock-bar" style={{height: '60%'}}></div>
-          <div className="mock-bar" style={{height: '45%'}}></div>
-          <div className="mock-bar" style={{height: '80%'}}></div>
-          <div className="mock-bar" style={{height: '65%'}}></div>
-          <div className="mock-bar" style={{height: '90%'}}></div>
-          <div className="mock-bar" style={{height: '100%', background: 'var(--accent-cyan)'}}></div>
+        <div className="chart-body" style={{ height: '300px', width: '100%', marginTop: '1.5rem' }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={mockData}>
+              <XAxis dataKey="name" stroke="var(--text-secondary)" fontSize={12} tickLine={false} axisLine={false} />
+              <Tooltip 
+                cursor={{fill: 'rgba(255, 255, 255, 0.05)'}}
+                contentStyle={{ backgroundColor: 'var(--bg-card)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: 'var(--text-primary)' }} 
+                itemStyle={{ color: 'var(--accent-cyan)' }}
+              />
+              <Bar dataKey="activity" radius={[4, 4, 0, 0]}>
+                {mockData.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={index === mockData.length - 1 ? 'var(--accent-cyan)' : 'var(--base-blue)'} />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
     </div>
