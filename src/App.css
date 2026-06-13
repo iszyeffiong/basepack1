@@ -43,12 +43,33 @@
   }
 }
 
-/* update 3 */
-/* update 11 */
-/* update 19 */
-/* update 27 */
-/* update 35 */
-/* update 43 */
-/* update 51 */
-/* update 59 */
-/* update 67 */
+.sidebar-content {
+  padding: 1.5rem;
+}
+.sidebar-title {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.sidebar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar-link {
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.dot-blue { background: var(--base-blue); }
+.dot-cyan { background: var(--accent-cyan); }
+.dot-purple { background: #9C27B0; }
+.dot-green { background: #00E676; }

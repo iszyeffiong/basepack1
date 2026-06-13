@@ -12,25 +12,25 @@ function App() {
       <main className="main-content">
         <aside className="sidebar glass-panel">
           {/* Quick links or secondary nav could go here */}
-          <div style={{ padding: '1.5rem' }}>
-            <h3 style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.875rem', textTransform: 'uppercase' }}>
+          <div className="sidebar-content">
+            <h3 className="sidebar-title">
               Base Ecosystem
             </h3>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <li><a href="#" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--base-blue)' }}></span>
+            <ul className="sidebar-nav">
+              <li><a href="#" className="sidebar-link">
+                <span className="dot dot-blue"></span>
                 Bridge
               </a></li>
-              <li><a href="#" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent-cyan)' }}></span>
+              <li><a href="#" className="sidebar-link">
+                <span className="dot dot-cyan"></span>
                 Swap
               </a></li>
-              <li><a href="#" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#9C27B0' }}></span>
+              <li><a href="#" className="sidebar-link">
+                <span className="dot dot-purple"></span>
                 NFTs
               </a></li>
-              <li><a href="#" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#00E676' }}></span>
+              <li><a href="#" className="sidebar-link">
+                <span className="dot dot-green"></span>
                 Earn
               </a></li>
             </ul>
