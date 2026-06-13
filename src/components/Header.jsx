@@ -22,13 +22,4 @@ const Header = () => {
 };
 
 export default Header;
-
-// update 6
-// update 14
-// update 22
-// update 30
-// update 38
-// update 46
-// update 54
-// update 62
-// update 70
+

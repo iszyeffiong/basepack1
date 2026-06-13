@@ -48,12 +48,4 @@ const TransactionList = () => {
 };
 
 export default TransactionList;
-
-// update 7
-// update 15
-// update 23
-// update 31
-// update 39
-// update 47
-// update 55
-// update 63
+

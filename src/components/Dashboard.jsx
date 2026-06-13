@@ -47,13 +47,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-// update 5
-// update 13
-// update 21
-// update 29
-// update 37
-// update 45
-// update 53
-// update 61
-// update 69
+

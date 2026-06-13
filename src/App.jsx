@@ -47,13 +47,4 @@ function App() {
 }
 
 export default App;
-
-// update 4
-// update 12
-// update 20
-// update 28
-// update 36
-// update 44
-// update 52
-// update 60
-// update 68
+
