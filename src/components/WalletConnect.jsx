@@ -41,3 +41,4 @@ export default WalletConnect;
 // update 16
 // update 24
 // update 32
+// update 40
