@@ -1,4 +1,3 @@
-import React from 'react';
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import './Dashboard.css';
 
