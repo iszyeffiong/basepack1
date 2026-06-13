@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import TransactionList from './components/TransactionList';
@@ -17,22 +18,22 @@ function App() {
               Base Ecosystem
             </h3>
             <ul className="sidebar-nav">
-              <li><a href="#" className="sidebar-link">
+              <li><NavLink to="/bridge" className="sidebar-link">
                 <span className="dot dot-blue"></span>
                 Bridge
-              </a></li>
-              <li><a href="#" className="sidebar-link">
+              </NavLink></li>
+              <li><NavLink to="/swap" className="sidebar-link">
                 <span className="dot dot-cyan"></span>
                 Swap
-              </a></li>
-              <li><a href="#" className="sidebar-link">
+              </NavLink></li>
+              <li><NavLink to="/nfts" className="sidebar-link">
                 <span className="dot dot-purple"></span>
                 NFTs
-              </a></li>
-              <li><a href="#" className="sidebar-link">
+              </NavLink></li>
+              <li><NavLink to="/earn" className="sidebar-link">
                 <span className="dot dot-green"></span>
                 Earn
-              </a></li>
+              </NavLink></li>
             </ul>
           </div>
         </aside>
