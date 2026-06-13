@@ -37,9 +37,23 @@
   }
   .sidebar {
     width: 100%;
+  }
+  .sidebar-content {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .sidebar-title {
+    display: none;
+  }
+  .sidebar-nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0.5rem;
+    overflow-x: auto;
   }
 }
 
